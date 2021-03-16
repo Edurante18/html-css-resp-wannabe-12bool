@@ -5,6 +5,9 @@
     box-sizing: border-box;
   }
   
+
+  /* VISUALIZZAZIONE LG */
+
   /* COMMON */
   .row::after {
     content: '';
@@ -60,29 +63,29 @@
   }
   
   
-  /* INIZIO A SOVRASCRIVERE I CSS PER LA VISUALIZZAZIONE DA SMARTPHONE*/
+  /* INIZIO A SOVRASCRIVERE I CSS PER LA VISUALIZZAZIONE XS*/
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 767px) {
     .row {
       width: 100%;
       margin: 0;
     }
   }
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 767px) {
     img {
       width: 25%;
       height: auto;
     }
   }
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 767px) {
     #lezioni, #why {
       background-color: #F2F2CD;
     }
   }
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 767px) {
     #lezioni, #steps, #why {
       margin: 0;
       padding-top: 10px;
@@ -90,7 +93,7 @@
     }
   }
   
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 767px) {
     #why .row img {
       margin: 0;
       padding: 10px;
