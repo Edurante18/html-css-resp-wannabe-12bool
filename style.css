@@ -37,11 +37,6 @@
     text-align: center;
   }
   
-  #lezioni .row .col-6 {
-    width: calc((100%/12)*6);
-    float: left;
-  }
-  
   #lezioni .row img {
     display: block;
     margin-right: auto;
@@ -52,21 +47,10 @@
   #steps {
     text-align: center;
   }
-  
-  #steps .row>.col-4 {
-    float: left;
-    width: calc((100%/12)*4);
-  }
-  
-  
+ 
   /* BLOCCO PERCHE */
   #why {
     text-align: center;
-  }
-  
-  #why .row>.col-12 {
-    width: calc((100%/12)*12);
-    margin-top: 80px;
   }
   
   #why .row img {
@@ -103,22 +87,6 @@
       margin: 0;
       padding-top: 10px;
       width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 420px) {
-    #lezioni .row>.col-6,
-    #steps .row>.col-4 {
-      width: 100%;
-      padding: 10px;
-      float: none; 
-    }
-  }
-  
-  @media screen and (max-width: 420px) {
-    #why .row .col-12 {
-      padding-top: 20px;
-      margin: 0;
     }
   }
   
