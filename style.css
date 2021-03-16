@@ -1,0 +1,130 @@
+/* AGGIUNGO IL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* COMMON */
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .container.grey {
+    background-color: #f9f9f9;
+  }
+  
+  img {
+    height: 200px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .row {
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  
+  /* BLOCCO LEZIONI */
+  #lezioni {
+    text-align: center;
+  }
+  
+  #lezioni .row .col-6 {
+    width: calc((100%/12)*6);
+    float: left;
+  }
+  
+  #lezioni .row img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* BLOCCO STEPS */
+  #steps {
+    text-align: center;
+  }
+  
+  #steps .row>.col-4 {
+    float: left;
+    width: calc((100%/12)*4);
+  }
+  
+  
+  /* BLOCCO PERCHE */
+  #why {
+    text-align: center;
+  }
+  
+  #why .row>.col-12 {
+    width: calc((100%/12)*12);
+    margin-top: 80px;
+  }
+  
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
+  }
+  
+  
+  /* INIZIO A SOVRASCRIVERE I CSS PER LA VISUALIZZAZIONE DA SMARTPHONE*/
+  
+  @media screen and (max-width: 420px) {
+    .row {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    img {
+      width: 25%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    #lezioni, #why {
+      background-color: #F2F2CD;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    #lezioni, #steps, #why {
+      margin: 0;
+      padding-top: 10px;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    #lezioni .row>.col-6,
+    #steps .row>.col-4 {
+      width: 100%;
+      padding: 10px;
+      float: none; 
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    #why .row .col-12 {
+      padding-top: 20px;
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    #why .row img {
+      margin: 0;
+      padding: 10px;
+    }
+  }
